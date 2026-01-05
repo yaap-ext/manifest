@@ -24,7 +24,6 @@
   <remove-project name="platform/external/chromium-webview" />
   <remove-project name="platform/external/dtc" />
   <remove-project name="platform/external/e2fsprogs" />
-  <remove-project name="platform/external/erofs-utils" />
   <remove-project name="platform/external/exfatprogs" />
   <remove-project name="platform/external/f2fs-tools" />
   <remove-project name="platform/external/freetype" />
@@ -32,7 +31,6 @@
   <remove-project name="platform/external/libdav1d" />
   <remove-project name="platform/external/libfuse" />
   <remove-project name="platform/external/libjpeg-turbo" />
-  <remove-project name="platform/external/libpng" />
   <remove-project name="platform/external/libxml2" />
   <remove-project name="platform/external/mksh" />
   <remove-project name="platform/external/skia" />
@@ -59,6 +57,7 @@
   <remove-project name="platform/hardware/samsung/nfc" />
   <remove-project name="platform/packages/apps/Calendar" />
   <remove-project name="platform/packages/apps/Camera2" />
+  <remove-project name="platform/packages/apps/CellBroadcastReceiver" />
   <remove-project name="platform/packages/apps/Contacts" />
   <remove-project name="platform/packages/apps/DeskClock" />
   <remove-project name="platform/packages/apps/Dialer" />
@@ -80,6 +79,7 @@
   <remove-project name="platform/packages/modules/Nfc" />
   <remove-project name="platform/packages/modules/Permission" />
   <remove-project name="platform/packages/modules/StatsD" />
+  <remove-project name="platform/packages/modules/UprobeStats" />
   <remove-project name="platform/packages/modules/Wifi" />
   <remove-project name="platform/packages/providers/BlockedNumberProvider" />
   <remove-project name="platform/packages/providers/BookmarkProvider" />
@@ -91,6 +91,7 @@
   <remove-project name="platform/packages/services/BuiltInPrintService" />
   <remove-project name="platform/packages/services/DeviceAsWebcam" />
   <remove-project name="platform/packages/services/Iwlan" />
+  <remove-project name="platform/packages/services/Mms" />
   <remove-project name="platform/packages/services/Telecomm" />
   <remove-project name="platform/packages/services/Telephony" />
   <remove-project name="platform/prebuilts/clang/host/darwin-x86" />

@@ -1,4 +1,4 @@
-YAAP
+YAAP Ext
 ==============
 
 Getting Started
@@ -10,7 +10,7 @@ familiar with [Git and Repo](http://source.android.com/source/using-repo.html).
 To initialize your local repository using the YAAP trees, use a command like this:
 
 ```bash
-repo init -u https://github.com/yaap/manifest.git -b sixteen --git-lfs
+repo init -u https://github.com/yaap-ext/manifest.git -b sixteen-qpr0 --git-lfs
 ```
 Then to sync up:
 ```bash

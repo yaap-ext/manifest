@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="yaap-ext"
+           fetch="https://github.com/yaap-ext"
+           revision="refs/heads/sixteen-qpr0" />
+
+  <!-- General -->
+  <project path="art" name="art" remote="yaap-ext" />
+  <project path="bootable/recovery" name="bootable_recovery" remote="yaap-ext" />
+  <project path="bionic" name="bionic" remote="yaap-ext" />
+  <project path="manifest" name="manifest" remote="yaap-ext" />
+
+  <!-- Build -->
+  <project path="build/make" name="build_make" remote="yaap-ext" >
+   <copyfile src="core/root.mk" dest="Makefile" />
+   <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+   <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+   <linkfile src="core" dest="build/core" />
+   <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+   <linkfile src="target" dest="build/target" />
+   <linkfile src="tools" dest="build/tools" />
+  </project>
+  <project path="build/soong" name="build_soong" remote="yaap-ext" >
+   <linkfile src="root.bp" dest="Android.bp" />
+   <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+
+  <!-- External -->
+  <project path="external/arm-optimized-routines" name="external_arm-optimized-routines" remote="yaap-ext" />
+  <project path="external/bouncycastle" name="external_bouncycastle" remote="yaap-ext" />
+  <project path="external/avb" name="external_avb" remote="yaap-ext" />
+  <project path="external/dtc" name="external_dtc" remote="yaap-ext" />
+  <project path="external/e2fsprogs" name="external_e2fsprogs" remote="yaap-ext" />
+  <project path="external/exfatprogs" name="external_exfatprogs" remote="yaap-ext" />
+  <project path="external/f2fs-tools" name="external_f2fs-tools" remote="yaap-ext" />
+  <project path="external/freetype" name="external_freetype" remote="yaap-ext" />
+  <project path="external/libcxx" name="external_libcxx" remote="yaap-ext" />
+  <project path="external/libdav1d" name="external_libdav1d" remote="yaap-ext" />
+  <project path="external/libfuse" name="external_libfuse" remote="yaap-ext" />
+  <project path="external/libjpeg-turbo" name="external_libjpeg-turbo" remote="yaap-ext" />
+  <project path="external/libxml2" name="external_libxml2" remote="yaap-ext" />
+  <project path="external/setupcompat" name="external_setupcompat" remote="yaap-ext" />
+  <project path="external/skia" name="external_skia" remote="yaap-ext" />
+  <project path="external/sqlite" name="external_sqlite" remote="yaap-ext" />
+  <project path="external/tensorflow" name="external_tensorflow" remote="yaap-ext" />
+  <project path="external/tinycompress" name="external_tinycompress" remote="yaap-ext" />
+  <project path="external/vixl" name="external_vixl" remote="yaap-ext" />
+  <project path="external/zstd" name="external_zstd" remote="yaap-ext" />
+
+  <!-- Frameworks -->
+  <project path="frameworks/av" name="frameworks_av" remote="yaap-ext" />
+  <project path="frameworks/base" name="frameworks_base" remote="yaap-ext" />
+  <project path="frameworks/libs/systemui" name="frameworks_libs_systemui" remote="yaap-ext" />
+  <project path="frameworks/minikin" name="frameworks_minikin" remote="yaap-ext" />
+  <project path="frameworks/native" name="frameworks_native" remote="yaap-ext" />
+  <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" remote="yaap-ext" />
+  <project path="frameworks/opt/net/ims" name="frameworks_opt_net_ims" remote="yaap-ext" />
+
+  <!-- Hardware -->
+  <project path="hardware/google/pixel" name="hardware_google_pixel" remote="yaap-ext" />
+  <project path="hardware/google/pixel-sepolicy" name="hardware_google_pixel-sepolicy" remote="yaap-ext" />
+  <project path="hardware/libhardware" name="hardware_libhardware" remote="yaap-ext" />
+  <project path="hardware/interfaces" name="hardware_interfaces" remote="yaap-ext" />
+  <project path="hardware/qcom-caf/wlan" name="hardware_qcom-caf_wlan" remote="yaap-ext" />
+
+  <!-- Kernel Config -->
+  <project path="kernel/configs" name="kernel_configs" remote="yaap-ext" />
+
+  <!-- Packages -->
+  <project path="packages/apps/Camera2" name="packages_apps_Camera2" remote="yaap-ext" />
+  <project path="packages/apps/Contacts" name="packages_apps_Contacts" remote="yaap-ext" />
+  <project path="packages/apps/CellBroadcastReceiver" name="packages_apps_CellBroadcastReceiver" remote="yaap-ext" />
+  <project path="packages/apps/Dialer" name="packages_apps_Dialer" remote="yaap-ext" />
+  <project path="packages/apps/DocumentsUI" name="packages_apps_DocumentsUI" remote="yaap-ext" />
+  <project path="packages/apps/EmergencyInfo" name="packages_apps_EmergencyInfo" remote="yaap-ext" />
+  <project path="packages/apps/KProfiles" name="packages_apps_KProfiles" remote="yaap-ext" />
+  <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" remote="yaap-ext" />
+  <project path="packages/apps/LMOFreeform" name="packages_apps_LMOFreeform" remote="yaap-ext" />
+  <project path="packages/apps/OpenDelta" name="packages_apps_OpenDelta" remote="yaap-ext" />
+  <project path="packages/apps/PhoneCommon" name="packages_apps_PhoneCommon" remote="yaap-ext" />
+  <project path="packages/apps/Seedvault" name="packages_apps_Seedvault" remote="yaap-ext" />
+  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="yaap-ext" />
+  <project path="packages/apps/Settings/YASP" name="packages_apps_YASP" remote="yaap-ext" />
+  <project path="packages/apps/SettingsIntelligence" name="packages_apps_SettingsIntelligence" remote="yaap-ext" />
+  <project path="packages/apps/SetupWizard" name="packages_apps_SetupWizard" remote="yaap-ext" />
+  <project path="packages/apps/Stk" name="packages_apps_Stk" remote="yaap-ext" />
+  <project path="packages/apps/ThemePicker" name="packages_apps_ThemePicker" remote="yaap-ext" />
+  <project path="packages/modules/UprobeStats" name="packages_modules_UprobeStats" remote="yaap-ext" />
+  <project path="packages/apps/WallpaperPicker2" name="packages_apps_WallpaperPicker2" remote="yaap-ext" />
+  <project path="packages/inputmethods/LatinIME" name="packages_inputmethods_LatinIME" remote="yaap-ext" />
+  <project path="packages/modules/Bluetooth" name="packages_modules_Bluetooth" remote="yaap-ext" />
+  <project path="packages/modules/Connectivity" name="packages_modules_Connectivity" remote="yaap-ext" />
+  <project path="packages/modules/Nfc" name="packages_modules_Nfc" remote="yaap-ext" />
+  <project path="packages/modules/Permission" name="packages_modules_Permission" remote="yaap-ext" />
+  <project path="packages/modules/StatsD" name="packages_modules_StatsD" remote="yaap-ext" />
+  <project path="packages/modules/Wifi" name="packages_modules_Wifi" remote="yaap-ext" />
+  <project path="packages/providers/BlockedNumberProvider" name="packages_providers_BlockedNumberProvider" remote="yaap-ext" />
+  <project path="packages/providers/CalendarProvider" name="packages_providers_CalendarProvider" remote="yaap-ext" />
+  <project path="packages/providers/CallLogProvider" name="packages_providers_CallLogProvider" remote="yaap-ext" />
+  <project path="packages/providers/ContactsProvider" name="packages_providers_ContactsProvider" remote="yaap-ext" />
+  <project path="packages/providers/MediaProvider" name="packages_providers_MediaProvider" remote="yaap-ext" />
+  <project path="packages/providers/TelephonyProvider" name="packages_providers_TelephonyProvider" remote="yaap-ext" />
+  <project path="packages/services/DeviceAsWebcam" name="packages_services_DeviceAsWebcam" remote="yaap-ext" />
+  <project path="packages/services/Iwlan" name="packages_services_Iwlan" remote="yaap-ext" />
+  <project path="packages/services/Mms" name="packages_services_Mms" remote="yaap-ext" />
+  <project path="packages/services/OmniJaws" name="packages_services_OmniJaws" remote="yaap-ext" />
+  <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="yaap-ext" />
+  <project path="packages/services/Telephony" name="packages_services_Telephony" remote="yaap-ext" />
+
+  <!-- System -->
+  <project path="system/bpf" name="system_bpf" remote="yaap-ext" />
+  <project path="system/core" name="system_core" remote="yaap-ext" />
+  <project path="system/libvintf" name="system_libvintf" remote="yaap-ext" />
+  <project path="system/media" name="system_media" remote="yaap-ext" />
+  <project path="system/memory/libmeminfo" name="system_memory_libmeminfo" remote="yaap-ext" />
+  <project path="system/memory/lmkd" name="system_memory_lmkd" remote="yaap-ext" />
+  <project path="system/sepolicy" name="system_sepolicy" remote="yaap-ext" />
+  <project path="system/update_engine" name="system_update_engine" remote="yaap-ext" />
+  <project path="system/vold" name="system_vold" remote="yaap-ext" />
+
+  <!-- Tools -->
+  <project path="tools/apksig" name="tools_apksig" remote="yaap-ext" />
+
+  <!-- Vendor -->
+  <project path="vendor/google/gms" name="aeoniixx/vendor_google_gms" remote="gitlab" revision="sixteen-qpr0" clone-depth="1" />
+  <project path="vendor/google/pixel" name="aeoniixx/vendor_google_pixel" remote="gitlab" revision="sixteen-qpr0" clone-depth="1" />
+  <project path="vendor/themes" name="vendor_themes" remote="yaap-ext" />
+  <project path="vendor/yaap" name="vendor_yaap" remote="yaap-ext" />
+
+</manifest>
